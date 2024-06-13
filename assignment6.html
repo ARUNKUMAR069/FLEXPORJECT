@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex use</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Utility classes */
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-center {
+            justify-content: center;
+
+        }
+
+        .align-center {
+            align-items: center;
+        }
+
+        .coloumn-direction {
+            flex-direction: column;
+        }
+
+        .yellow-back {
+            background-color: blueviolet;
+        }
+
+        .width-height-container {
+            width: 40vw;
+            height: 40vh;
+        }
+
+        /* classes on elements */
+        nav {
+            height: 20vh;
+            width: 100vw;
+            background-color: rgb(71, 236, 115);
+            color: white;
+        }
+
+        .smallnav {
+            background-color: rgba(13, 12, 12, 0.616);
+            width: 100vw;
+            height: 5vh;
+
+        }
+
+        .smallnav ul {
+            list-style: none;
+            gap: 30px;
+            margin: 0px 0vw 0px 2vw;
+        }
+
+        .smallnav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main1 {
+            height: 109vh;
+            width: 100vw;
+
+        }
+
+        .left {
+            width: 37vw;
+            height: 100vh;
+            padding: 24px;
+            background-color: grey;
+            row-gap: 1vh;
+
+        }
+
+        .container1 {
+            row-gap: 1vh;
+        }
+
+        .container1 img {
+            height: 27vh;
+            width: 30vw;
+            background-color: rgb(157, 177, 177);
+        }
+
+        .container2 {
+            row-gap: 2vh;
+        }
+
+        .container2 img {
+            height: 10vh;
+            width: 30vw;
+            background-color: rgb(157, 177, 177);
+
+        }
+
+
+        .right {
+            width: 57vw;
+            height: 100vh;
+            padding: 24px;
+        }
+
+        .right-container {
+            row-gap: 1vh;
+        }
+
+        .right-container img {
+            height: 27vh;
+            width: 50vw;
+            background-color: rgb(157, 177, 177);
+        }
+
+        footer {
+            background-color: rgb(228, 226, 226);
+            height: 7vh;
+            width: 100vw;
+         
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="flex justify-center align-center coloumn-direction">
+        <h1>My Website</h1>
+        <p>With a flexible layout</p>
+    </nav>
+    <div class="smallnav flex align-center">
+        <ul class="flex  align-center">
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+        </ul>
+    </div>
+    <div class="main1 flex">
+        <div class="left flex coloumn-direction">
+            <div class="container1 flex coloumn-direction width-height-container">
+
+                <h2>About me</h2>
+                <h4>Photo of me</h4>
+                <img src="" alt="">
+                <p>Some text about me in cupla qui office dseunt molit anime..</p>
+            </div>
+            <div class="container2 flex coloumn-direction width-height-container">
+
+                <h2>More Text</h2>
+                <p>Lorem ipsum dolor sit amet </p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-container flex coloumn-direction">
+
+                <h2>TITLE HEADING</h2>
+                <h4>Title description,Dec7,2017</h4>
+                <img src="" alt="">
+                <p>Some text...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur omnis magni praesentium
+                    ab,
+                    architecto blanditiis at laboriosam </p>
+            </div>
+            <div class="right-container flex coloumn-direction">
+
+                <h2>TITLE HEADING</h2>
+                <h4>Title description,Dec7,2017</h4>
+                <img src="" alt="">
+                <p>Some text...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur omnis magni praesentium
+                    ab,
+                    architecto blanditiis at laboriosam </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+
+
+</body>
+
+</html>
